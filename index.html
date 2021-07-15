@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+          background-color: aliceblue;  
+        }
+        .mt-5p{
+            margin-top: 5%;
+        }
+        .card{
+            box-shadow: 0px 0px 6px -1px #dbdbdb75;
+            border: none;
+        }
+        .pd-0{
+            padding: 0px;
+        }
+        .pdt-10{
+            padding-top: 10px;
+        }
+        .mr-lr-15{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .mt-14{
+            margin-top: 21px;
+        }
+        .frame1{
+            background: #000e33;
+            color: white;
+            padding: 15px;
+        }
+        .profile-img{
+            width: 90%;
+            border-radius: 50%;
+            border: 9px solid #ffffff0f;
+        }
+        .l-title-2{
+            font-size: 14px;
+        }
+        .title, .l-title{
+            font-size: 20px;
+        }
+        .personal-info > p{
+            margin-bottom: 10px;
+        }
+        .tech-1{
+            width: 20%;
+            display: inline-block;
+            margin-right: 2%;
+            margin-top: 3%;
+
+        }
+
+        .tech-1 > h5{
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        legend{
+            font-size: 18px;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="row mt-5p">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+            <div class="card">
+                <div class="card-body pd-0">
+                  <div class="row mr-lr-15">
+                    <div class="col-md-3 frame1">
+                        <div class="step1 text-center">
+                            <img src="img/logo.jpg" alt="" class="profile-img">
+                        </div>
+                        <p class="text-center title pdt-10"><b><i>Ritesh Kumar</i></b></p>
+                        <div class="step2">
+                            <p class="l-title"><b>Personal</b></p>
+                            <div class="personal-info">
+                                <p>
+                                    <span class="l-title-1"><i class="fa fa-user"></i> &nbsp; <span class="l-title-2">Ritesh Kumar </span></span>
+                                </p>
+                                <p>
+                                    <span class="l-title-1"><i class="fa fa-phone"></i> &nbsp; <span class="l-title-2">+91-9599337311</span></span>
+                                </p>
+                                <p>
+                                    <span class="l-title-1"><i class="fa fa-envelope"></i> &nbsp; <span class="l-title-2">riteshkumar.coder@gmail.com</span></span>
+                                </p>
+                                <p>
+                                    <span class="l-title-1"><i class="fa fa-location-arrow"></i> &nbsp; 
+                                        <span class="l-title-2">F-67, Aali vihar
+                                            Sarita Vihar Delhi, 
+                                            India-110076
+                                    </span></span>
+                                </p>
+                                
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-9">
+                        <!-- tab system -->
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu1">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu2">Expertise</a>
+                        </li>
+                        </ul>
+
+
+                        <div class="tab-content">
+                            <div id="home" class="container tab-pane active"><br>
+                                <div class="frontend">
+                                    <legend>Frontend Tech</legend>
+                                    <div class="tech-1">
+                                        <h5>Html</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" style="width:80%">
+                                                80%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tech-1">
+                                        <h5>Css</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" style="width:80%">
+                                                75%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tech-1">
+                                        <h5>Bootstrap</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" style="width:80%">
+                                                70%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tech-1">
+                                        <h5>JavaScript</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" style="width:80%">
+                                                80%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tech-1">
+                                        <h5>Jquery</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" style="width:70%">
+                                                70%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tech-1">
+                                        <h5>React-JS</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" style="width:30%">
+                                                30%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tech-1">
+                                        <h5>Angular-JS</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" style="width:30%">
+                                                30%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="server-side mt-14">
+                                    <legend>Backend Tech</legend>
+                                    <div class="tech-1">
+                                        <h5>Php</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" style="width:80%">
+                                                80%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tech-1">
+                                        <h5>Codeigniter</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" style="width:80%">
+                                                75%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tech-1">
+                                        <h5>Laravel</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" style="width:80%">
+                                                70%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="backend mt-14">
+                                    <legend>Backend</legend>
+                                    <div class="tech-1">
+                                        <h5>Mysql</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" style="width:80%">
+                                                80%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <div id="menu1" class="container tab-pane fade"><br>
+                              <h3>Menu 1</h3>
+                              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div id="menu2" class="container tab-pane fade"><br>
+                              <h3>Menu 2</h3>
+                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <!-- end tab system -->
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+        </div>
+        <div class="col"></div>
+    </div>
+    
+</body>
+</html>

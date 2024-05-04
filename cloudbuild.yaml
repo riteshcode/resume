@@ -1,5 +1,16 @@
-name: IBEW Local 123
-county: orange
-state: CA
-description: Local 123 has close ties with developers.
-tags: [active, developers]
+steps:
+# Step 1: Install dependencies (if any)
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+
+# Step 2: Build the static site (if necessary, e.g., using a static site generator)
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['run', 'build']
+
+# Step 3: Copy the built files to a GCS bucket
+- name: 'gcr.io/cloud-builders/gsutil'
+  args: ['-m', 'rsync', '-r', '-c', '-d', 'dist/', 'gs://testcicd_bucket']
+
+# Optional: Set metadata for cache control (for browser caching)
+- name: 'gcr.io/cloud-builders/gsutil'
+  args: ['cp', '-r', '-a', 'public-read', '-z', 'html,htm,css,js,json,xml', '-h', 'Cache-Control:public,max-age=3600', 'gs://testcicd_bucket/**']

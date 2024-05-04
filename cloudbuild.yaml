@@ -1,0 +1,9 @@
+# Use the latest official Node.js image.
+# https://hub.docker.com/_/node
+steps:
+  - name: gcr.io/cloud-builders/npm
+    args: ['install']
+  - name: gcr.io/cloud-builders/npm
+    args: ['run', 'build']
+  - name: gcr.io/cloud-builders/gcloud
+    args: ['app', 'deploy', 'my-app', '--project', 'my-project', '--region', 'us-central1']
